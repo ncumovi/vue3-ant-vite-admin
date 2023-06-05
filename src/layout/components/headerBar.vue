@@ -42,6 +42,7 @@ export default {
       //清空动态的路由
       const perStore = usePermissionStore();
       perStore.userMenu = [];
+      perStore.authRoutes = [];
       router.push({ path: "/login" });
     };
     const userInfo = JSON.parse(sessionStorage.getItem("userInfo"));
